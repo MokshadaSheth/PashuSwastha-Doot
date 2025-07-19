@@ -1,69 +1,99 @@
-# Welcome to your Lovable project
+# 🐄 Pashu Swastha – Doot
 
-## Project info
+**Pashu Swastha – Doot** is a full-stack web platform built to help rural farmers easily connect with nearby veterinary doctors, get trusted livestock disease remedies, and trade animals or products via an integrated stock buy/sell feature. The platform bridges the gap between modern veterinary care and grassroots rural needs.
 
-**URL**: https://lovable.dev/projects/da0788d0-27b8-4122-ae8e-7d7aeda78c4a
+## 📽 Demo
 
-## How can I edit this code?
+🎥 [Click here to watch the demo video](https://drive.google.com/your-video-link-here) 
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 💡 Problem Statement
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/da0788d0-27b8-4122-ae8e-7d7aeda78c4a) and start prompting.
+Many farmers in rural areas struggle to access timely and trustworthy veterinary care for their livestock. Traditional methods of disease treatment may not always be effective, and access to professionals is often limited.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🚀 Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- 🧑‍⚕️ Find local veterinary doctors near your village
+- 📚 Home remedies and educational articles/videos for livestock health
+- 🔄 Buy/Sell livestock and related stock products
+- 👥 Multiple login panels:
+  - **Farmer**
+  - **Doctor**
+  - **Admin**
+- 🔍 Search functionality for diseases and remedies
+- 🐮 Doctor approval and verification mechanism by Admin
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🛠 Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Frontend**: React.js
+- **Backend**: Node.js + Express.js
+- **Database**: MongoDB (Atlas)
+- **Web Scraping**: Python (BeautifulSoup)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🧪 Installation & Usage
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Prerequisites
+- Node.js & npm
+- MongoDB
+- Python 3 (for scraping scripts)
+
+### Setup
+
+1. **Clone the Repository**  
+   ```
+   git clone https://github.com/your-username/pashu-swastha-doot.git
+   cd pashu-swastha-doot
+    ```
+
+2. **Backend Setup**
+
+   ```bash
+   cd server
+   npm install
+   npm start
+   ```
+
+3. **Frontend Setup**
+
+   ```bash
+   cd client
+   npm install
+   npm start
+   ```
+
+4. **Run Scraper (Optional)**
+
+   ```bash
+   python3 scrape.py
+   ```
+
+> ⚠️ Make sure your MongoDB is running locally or update the `MONGO_URI` in `.env` accordingly.
+
+---
+
+## 📚 Use Cases
+
+* Connect farmers to local, trusted veterinarians
+* Enable low-cost home-based remedies
+* Create a small-scale livestock marketplace
+* Empower rural India through technology-driven veterinary care
+
+---
+
+## 📂 Project Structure
+
+```
+pashu-swastha-doot/
+├── client/             # React frontend
+├── server/             # Express + Node backend
+├── scraper/            # Python scripts for data scraping
+└── README.md
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/da0788d0-27b8-4122-ae8e-7d7aeda78c4a) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
